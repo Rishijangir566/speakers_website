@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: 700;
+    background-color: black;
+    color: rgb(221, 222, 223);
+    font-family:poppins;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    color: rgb(138, 138, 172);
+    font-weight:300;
+}
+li{
+    list-style: none;
+}
+h1,h2,h3,h4{
+    font-weight: bold;
+    font-size:2.5rem;
+}
+
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+#logo {
+    display: flex;
+    margin-left: 8rem;
+}
+#logo h2{
+    font-size:30px;
+}
+
+#logo h3{
+    font-size:28px;
+    padding-top:2px;
+    font-weight: 300;
+}
+#menu ul{
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+#menu ul li{
+    margin: 0 2rem;
+}
+#menu-icon img{
+    color: aliceblue;
+    height: 30px;
+    width: 30px;
+    margin: 0 2rem;
+    border-radius: 9px;
+}
+#container{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem 4rem;
+}
+#speakers-content{
+    width:17rem;
+}
+#speakers-content img{
+    height: 22rem;
+    width: 18rem;
+    border: 3px solid rgb(243, 205, 17);
+  
+}
+
+#speakers-content h2{
+    padding-left:1rem;
+}
+#speakers-content p{
+    padding:1rem;
+}
+button{
+    border: none;
+    background-color: black;
+   margin: 1rem 0 1rem 1rem;
+}
+button a{
+    background-color: black;
+    border:1px solid rgb(176, 146, 126);
+    border-radius:24px;
+    text-size-adjust: small;
+    padding: 0.7rem 2rem;
+}
+button a:hover{
+    background-color: rgb(13, 11, 66);
+    color: rgb(212, 142, 50);
+}
+#companies h3{
+   color: rgb(163, 169, 213);
+   font-size: 1.3rem;
+   font-weight: 100;
+   margin: 1rem 0 1rem 6rem;
+}
+
+.companies-logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+#speaker-vid iframe{
+    width: 100%;
+    height: 600px;
+    margin-top:4rem;
+    padding:1rem 5rem;
+    text-shadow: 5px 5px 4px rgb(216, 205, 205);
+}
+
+#discription h2{
+    padding-top: 4rem;
+    font-size:3.2em;
+    text-align: center;
+}
+#discription h2 span{
+    color:rgb(237, 152, 15);
+}
+#discription p{
+    text-align: center;
+    font-size:19px;
+    padding:1.4rem 25rem;
+}
+
+
+#future{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    align-items:start;
+    padding: 5rem 4rem;
+}
+#future-about{
+    width:40%;
+}
+#future-about h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+#future-about p{
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 8rem;
+}
+.media-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.s-media{
+    border: 1px solid rgb(230, 185, 185);
+    background-color: purple;
+    height: 10rem;
+    width: 10rem;
+}
+.s-media:hover{
+    background-color: rgb(210, 15, 210);
+    transform: scale(1.2);
+}
+.s-media img{
+    width:70px;
+    height:70px; 
+    padding:1rem;
+    margin:2rem 3rem;
+}
+.team-img img{
+    width:100%;
+    margin-top: 0.5rem;
+}
+
+.work{
+    display: flex;
+}
+
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 3rem;
+    padding: 1rem 3rem;
+}
+.item{
+    background-color: rgb(31, 30, 30); 
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    z-index:2;
+}
+.item::before{
+    content: "";
+    position: absolute;
+    height: 34rem;
+    width: 34rem;
+    top: -34rem;
+    left:-34rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    opacity:0.2;
+    transition: all 0.6s ease-in-out;
+}
+.item:hover::before{
+    top:-5rem;
+    left:-5rem;
+}
+.item-head{
+    display: flex;
+     text-align: center;
+     margin:3rem;
+}
+
+.item-head img{
+    height:2.5rem;
+    width:2.5rem;
+    border: 10px solid rgb(29, 28, 28);
+    border-radius: 50%;
+}
+.item-head h3{
+     font-size:1.6rem; 
+     margin-left:1rem; 
+}
+.item{
+    box-shadow: 2px 2px 12px white;
+}
+.item h4{
+    font-size:20px;
+    padding-top:1rem;
+    color: #fff;
+    text-align: center;
+    margin-right: 2rem;
+}
+.item p{
+    padding:1rem 3rem;
+    margin-left: 1rem; 
+    margin-bottom: 2rem;
+    font-size:18px;
+    font-weight:300;
+    color: rgb(177, 177, 171);
+}
+
+.hire{
+    height:7rem;
+    background-color: purple;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin:4rem 0;
+    align-items: center;
+}
+.hire h2{
+    text-align: center;
+}
+
+.hire button{
+    background-color: purple;
+}
+.hire button a{
+    background-color: purple;
+    border: 1px solid wheat;
+    padding:0.8rem 3rem;
+    border-radius:23px;
+    font-size:18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.owners{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+    border-bottom:1px solid silver;
+}
+.owner{
+    box-shadow: 6px 6px 16px  rgb(11, 8, 73);
+}
+.owner:hover{
+    transform: scale(1.1);
+}
+.owner img{
+  height: 22rem;
+  width: 17rem;
+}
+.owner h2{
+    padding-bottom: 2rem;
+    line-height: 0.1rem;
+    z-index: -1;
+    text-align: center;
+}
+.owner p{
+    text-align: center;
+}
+
+footer{
+    margin: 5rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home h3{
+      font-size: 20px;
+      font-weight: 400;  
+      padding-top: 0.5rem;
+}
+.links p{
+    font-size: 9px;
+    color: rgb(207, 209, 209);
+    align-items: center;
+}
+
+/* about page start */
+.meet-box{
+    background-color: rgb(20, 20, 20);
+    margin: 5rem auto 0 ;
+    text-align: center;
+}
+.meet-box h2{
+    padding-top: 5rem;
+}
+.meet-box p{
+    padding-top: 2rem;
+     font-size: 20px;
+     width: 40%;
+     margin: 0 auto;
+     color: rgb(223, 223, 228);
+}
+
+.meet-box button{
+    margin:3rem;
+    
+}
+.meet-box button a{
+    background-color: rgb(20, 20, 20);
+    border-radius:23px;
+    font-size:16px;
+    padding: 0.8rem 3rem;
+    color: #fff;
+
+}
+
+.hire2{
+    height:7rem;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+.hire2 h2{
+    text-align: center;
+}
+.hire2 button{
+    background-color: purple;
+}
+.hire2 button a{
+    background-color: purple;
+    padding:0.8rem 3rem;
+    border-radius:23px;
+    font-size:18px;
+    font-weight: 400;
+    color: #fff;
+}
+/* section page */
+
+.section{
+    margin: 3rem auto;
+    text-align: center;
+}
+.section p{
+  font-size: 20px;
+  width: 40%;
+  margin: 1rem auto;
+}
+.back-ground{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name{
+    text-align: center;
+}
+
+ input{
+    height:2.5rem;
+    width:35rem;
+    margin: 1rem auto;
+    border-radius:5px;
+    border:1px solid black;
+    
+}
+input::placeholder , textarea::placeholder{
+    color: #000;
+    font-weight: 700;
+    padding-left:1rem;
+    font-size:15px;
+}
+ textarea{
+    height: 6rem;
+    width:35rem;
+    margin: 1rem auto;
+    border:1px solid black;
+}
+.back-ground button a{
+    background-color: rgb(0, 0, 0);
+    padding:0.8rem 6rem;
+    border-radius:23px;
+    font-size:18px;
+    font-weight: 400;
+    margin: 2rem;
+    color: #fff;
+}
+.back-ground button a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+/* media quries */
+
+ @media screen and (min-width:320px) and (max-width:500px) {
+    h1,h2,h3,h4{
+        font-weight: bold;
+        font-size:1.5rem;
+    }
+    #navbar{
+        gap: 1rem;
+    }
+    #menu ul li{
+        display:none;
+    }
+    #menu-icon img{
+        margin: 0;
+    }
+    #logo {
+        margin-left:0.5rem;
+    }
+    #speakers-content{
+        width: 17rem;
+    }
+    #speakers-content img{
+        height:100%;
+        width:100%;      
+    }
+    .companies-logo{
+       flex-direction: column;
+    }
+    .companies-logo img{
+        margin-top: 1rem;
+    }
+
+    #speaker-vid iframe{
+        width: 100%;
+        height: 160px;
+    }
+    #discription h2{
+        font-size:1.2em;
+    }
+    
+    #discription p{
+        text-align: center;
+        /* font-size:19px; */
+        padding:1.4rem 0;
+    }
+    
+    .items{
+        flex-direction: column;
+     }
+#future{
+    flex-direction: column;
+}
+#future-about{
+    width:100%;
+}
+#future-about h2{
+    font-size: 1.5rem;
+}
+
+.media-box{
+    width:100%;
+    flex-direction: column;
+}
+.work{
+    flex-direction: column;
+}
+.item h4{
+    display: none;
+}
+ }
+
+ @media screen and (min-width:500px) and (max-width:700px) {
+    h1,h2,h3,h4{
+        font-weight: bold;
+        font-size:2rem;
+    }
+    #navbar{
+        /* gap: 1rem; */
+    }
+    #menu ul li{
+        margin: 0 1rem;
+    }
+    #menu-icon img{
+        margin: 0;
+    }
+    #logo {
+        margin-left:0.5rem;
+    }
+    #speakers-content{
+        width:20rem;
+    }
+    #speakers-content img{
+        height:100%;
+        width:100%;      
+    }
+    .companies-logo{
+       flex-direction: column;
+    }
+    .companies-logo img{
+        margin-top: 1rem;
+    }
+    #companies h3 {
+        text-align: center;
+    }
+
+    #speaker-vid iframe{
+        width: 100%;
+        height: 260px;
+    }
+    #discription h2{
+        font-size:2em;
+    }
+    
+    #discription p{
+        text-align: center;
+        padding:1.4rem 0;
+    }
+    .items{
+       flex-direction: column;
+    }
+#future{
+    flex-direction: column;
+}
+#future-about{
+    width:100%;
+}
+#future-about h2{
+    font-size: 1.5rem;
+}
+
+.media-box{
+    width:100%;
+}
+.work{
+    flex-direction: column;
+}
+.owner{
+    margin-top: 1rem;
+}
+ }
+ @media screen and (min-width:700px) and (max-width:950px) {
+   
+   
+    #menu ul li{
+        margin: 0 1rem;
+    }
+    #menu-icon img{
+        margin: 0;
+    }
+    #logo {
+        margin-left:0.5rem;
+    }
+    #speakers-content{
+        width:20rem;
+    }
+    #speakers-content img{
+        height:100%;
+        width:100%;      
+    }
+   
+    #speaker-vid iframe{
+        width: 100%;
+        height: 260px;
+    }
+    #discription h2{
+        font-size:2em;
+    }
+    
+    #discription p{
+        text-align: center;
+        padding:1.4rem 0;
+    }
+    .items{
+       flex-direction: column;
+    }
+#future{
+    flex-direction: column;
+}
+#future-about{
+    width:100%;
+}
+#future-about h2{
+    font-size: 1.5rem;
+}
+
+.media-box{
+    width:100%;
+}
+  
+ }
